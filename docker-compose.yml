@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  app:
+    container_name: app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/app
+    command: sh -c "cd react-practice && yarn start" 
+    ports:
+      - 3000:3000
+    stdin_open: true #標準入力をコンテナと紐付ける
