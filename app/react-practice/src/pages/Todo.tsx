@@ -1,4 +1,4 @@
-import { TodoTemplate } from "../components/pages/TodoTemplate";
+import { TodoTemplate } from '../components/pages/TodoTemplate';
 
 export const TodoPage = () => {
 	return (
@@ -6,4 +6,4 @@ export const TodoPage = () => {
 			<TodoTemplate />
 		</>
 	);
-}
+};
