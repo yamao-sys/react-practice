@@ -1,5 +1,7 @@
+import { RouterProvider } from 'react-router-dom';
 import './App.css';
-import { TodoPage } from './pages/Todo';
+import { router } from './router';
+import { TodoProvider } from './contexts/TodoContext';
 
 function App() {
 	return (
@@ -18,7 +20,10 @@ function App() {
           Learn React
         </a>
       </header> */}
-			<TodoPage />
+			{/* <TodoPage /> */}
+			<TodoProvider>
+				<RouterProvider router={router} />
+			</TodoProvider>
 		</div>
 	);
 }

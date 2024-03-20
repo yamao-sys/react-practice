@@ -8,7 +8,11 @@ export const AddTodo = (props: Props) => {
 
 	return (
 		<>
-			<input type="text" placeholder="Todo title" onChange={handleChangeTitle} />
+			<input
+				type="text"
+				placeholder="Todo title"
+				onChange={handleChangeTitle}
+			/>
 			<button onClick={handleCreateTodo}>追加</button>
 		</>
 	);
